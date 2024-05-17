@@ -5,18 +5,18 @@ const Product = () => {
     const [activeButton, setActiveButton] = useState(1);
     let [pricebtn1,setpricebtn1]=useState(1)
     function addblack(btn){
-        document.querySelector("#phoneimg").src="{`${process.env.PUBLIC_URL}/src/assets/iphone black.png"
+        document.querySelector("#phoneimg").src="./src/assets/iphone black.png"
         setActiveButton(btn)
         setcolortext("Black")
     }
     function addpink(btn){
-        document.querySelector("#phoneimg").src="{`${process.env.PUBLIC_URL}/src/assets/iphone pink.png"
+        document.querySelector("#phoneimg").src="./src/assets/iphone pink.png"
             setActiveButton(btn)
             setcolortext("Pink")
 
     }
     function addred(btn){
-        document.querySelector("#phoneimg").src="{`${process.env.PUBLIC_URL}/src/assets/iphone red.png"
+        document.querySelector("#phoneimg").src="./src/assets/iphone red.png"
             setActiveButton(btn)
             setcolortext("Red")
     }
@@ -29,7 +29,7 @@ const Product = () => {
     <div id="covercon" className=' place-content-center h-screen font-sans'>
     <div id="container" className='  flex w-[50%] mx-auto h-[30rem] '>
         <div id="box1" className='w-full place-content-center border-dotted border-4 border-slate-200 rounded-lg'>
-            <img id="phoneimg" className='w-[20rem] h-[20rem] mx-auto ' src="{`${process.env.PUBLIC_URL}/src/assets/iphone black.png" alt="" />
+            <img id="phoneimg" className='w-[20rem] h-[20rem] mx-auto ' src="./src/assets/iphone black.png" alt="" />
         </div>
         <div id="box2" className=' space-y-3 pt-[1.5rem] pl-5 pr-5 w-full'>
             <h1 className='text-center text-2xl font-bold'>Customize your case</h1>
